@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.canvas.Canvas?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="GreetingCardController"
+      spacing="15" alignment="CENTER"
+      style="-fx-padding: 20;">
+
+    <Label text="როგორი მისალოცი ბარათი გინდა" style="-fx-font-size: 16;" />
+
+    <CheckBox fx:id="balloonsCheck" text="🎈 Baloons"/>
+    <CheckBox fx:id="heartsCheck" text="️️❤️ ️ ️Hearts"/>
+    <CheckBox fx:id="starsCheck" text="⭐ Stars"/>
+
+    <Button text="Generate" onAction="#generateCard"/>
+
+    <Canvas fx:id="canvas" width="400" height="300" style="-fx-border-color: gray;" />
+</VBox>
